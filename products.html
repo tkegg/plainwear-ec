@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>plainwear. | ミニマルファッション</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-sans">
+  <!--Header（共通）-->
+  <header class="flex justify-between items-center px-6 py-4 shadow-md">
+    <h1 class="text-2xl font-bold">plainwear.</h1>
+    <nav>
+      <ul class="flex gap-6 text-sm">
+        <li><a href="index.html" class="hover:underline">ホーム</a></li>
+        <li><a href="products.html" class="hover:underline">商品一覧</a></li>
+        <li><a href="cart.html" class="hover:underline">カート</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--商品一覧-->
+  <main class="px-6 py-16">
+    <h2 class="text-2xl font-semibold text-center mb-10">商品一覧</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!--商品カード1-->
+      <a href="product-tshirt.html" class="border p-4 hover:shadow transition">
+        <img src="plainwear_img/white_shirts.jpg" alt="Tシャツ（ホワイト）" class="w-full h-72 object-cover mb-4 rounded">
+        <h3 class="text-lg font-medium">Tシャツ（ホワイト）</h3>
+        <p class="text-sm text-gray-600">¥3,000</p>
+      </a>
+
+      <!--商品カード2-->
+      <a href="product-cap.html" class="border p-4 hover:shadow transition">
+        <img src="plainwear_img/cap.jpg" alt="キャップ（ホワイト）" class="w-full h-72 object-cover mb-4 rounded">
+        <h3 class="text-lg font-medium">キャップ（ホワイト）</h3>
+        <p class="text-sm text-gray-600">¥2,500</p>
+      </a>
+
+      <!--商品カード3-->
+      <a href="product-bug.html" class="border p-4 hover:shadow transition">
+        <img src="plainwear_img/bug.jpg" alt="バッグ（ブラウン）" class="w-full h-72 object-cover mb-4 rounded">
+        <h3 class="text-lg font-medium">バッグ（ブラウン）</h3>
+        <p class="text-sm text-gray-600">¥5,800</p>
+      </a>
+
+      <!--他の商品カードも同様に追加-->
+    </div>
+  </main>
+
+  <!--Footer（共通）-->
+  <footer class="text-center py-6 border-t text-sm text-gray-500">
+    &copy; 2025 plainwear. All rights reserved.
+  </footer>
+</body>

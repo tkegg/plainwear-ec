@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>カート | plainwear.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-sans">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 py-4 shadow-md">
+    <h1 class="text-2xl font-bold">plainwear.</h1>
+    <nav>
+      <ul class="flex gap-6 text-sm">
+        <li><a href="index.html" class="hover:underline">ホーム</a></li>
+        <li><a href="products.html" class="hover:underline">商品一覧</a></li>
+        <li><a href="cart.html" class="hover:underline font-semibold">カート</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- カート内容 -->
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-semibold mb-8 text-center">ショッピングカート</h2>
+
+    <!-- 商品1 -->
+    <div class="flex items-center border-b pb-4 mb-4">
+      <img src="plainwear_img/white_shirts.jpg" alt="Tシャツ（ホワイト）" class="w-24 h-24 object-cover rounded mr-4" />
+      <div class="flex-1">
+        <h3 class="text-lg font-medium">Tシャツ（ホワイト）</h3>
+        <p class="text-sm text-gray-600">¥3,000</p>
+        <label class="text-sm">数量：
+          <input type="number" value="1" min="1" class="border px-2 py-1 w-16 ml-2" />
+        </label>
+      </div>
+    </div>
+
+    <!-- 商品2（オプション） -->
+    <div class="flex items-center border-b pb-4 mb-4">
+      <img src="plainwear_img/cap.jpg" alt="キャップ" class="w-24 h-24 object-cover rounded mr-4" />
+      <div class="flex-1">
+        <h3 class="text-lg font-medium">キャップ（ベージュ）</h3>
+        <p class="text-sm text-gray-600">¥2,500</p>
+        <label class="text-sm">数量：
+          <input type="number" value="2" min="1" class="border px-2 py-1 w-16 ml-2" />
+        </label>
+      </div>
+    </div>
+
+    <!-- 合計金額 -->
+    <div class="text-right mt-8 text-xl font-semibold">
+      合計：¥8,000
+    </div>
+
+    <!-- 購入ボタン -->
+    <div class="text-center mt-6">
+      <a href="#" class="inline-block bg-black text-white px-8 py-2 rounded hover:bg-gray-800">
+        購入に進む
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 border-t text-sm text-gray-500">
+    &copy; 2025 plainwear. All rights reserved.
+  </footer>
+
+</body>
+</html>
